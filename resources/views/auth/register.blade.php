@@ -10,7 +10,7 @@
         <div class="card center-box">
             <h3><i class="zmdi zmdi-account-add"></i> {{ title_case(trans('auth.sign_up')) }}</h3>
             <div class="body">
-                <form action="{{ baseUrl("/register") }}" method="POST">
+                <form style="display:none;" action="{{ baseUrl("/register") }}" method="POST">
                     {!! csrf_field() !!}
 
                     <div class="form-group">

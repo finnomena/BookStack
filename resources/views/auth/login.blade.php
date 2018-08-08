@@ -13,7 +13,7 @@
             <h3><i class="zmdi zmdi-sign-in"></i> {{ title_case(trans('auth.log_in')) }}</h3>
 
             <div class="body">
-                <form action="{{ baseUrl("/login") }}" method="POST" id="login-form">
+                <form style="display:none;" action="{{ baseUrl("/login") }}" method="POST" id="login-form">
                     {!! csrf_field() !!}
 
 
